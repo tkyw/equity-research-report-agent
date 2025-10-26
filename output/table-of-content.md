@@ -1,0 +1,42 @@
+Table of Content of the resources pool:
+- Annual Reports/
+  - 2020.pdf (relevant doc)
+    - ABOUT US
+    - COMPANY HISTORY TIMELINE
+    - CORPORATE INFORMATION
+    - CORPORATE STRUCTURE
+    - OUR STRATEGIC INTENTS
+    - FINANCIAL HIGHLIGHTS
+    - MANAGEMENT DISCUSSION AND ANALYSIS
+      - OVERVIEW OF BUSINESS AND OPERATIONS
+      - FINANCIAL PERFORMANCE REVIEW
+      - REVIEW OF OPERATIONS
+        - Ultra High Purity (“UHP”) Division
+        - Process Engineering (“PE”) Division
+        - General Contracting (“GC”) Division
+        - Industrial Gases
+      - LIQUIDITY AND CAPITAL RESOURCES
+      - FORWARD-LOOKING STATEMENTS
+      - RISKS AND MITIGATION
+      - OUTLOOK
+      - APPRECIATION
+    - BOARD OF DIRECTORS’ PROFILE
+    - KEY SENIOR MANAGEMENT’S PROFILE
+    - SUSTAINABILITY STATEMENT
+    - CORPORATE GOVERNANCE OVERVIEW STATEMENT
+    - STATEMENT ON RISK MANAGEMENT AND INTERNAL CONTROL
+    - AUDIT COMMITTEE REPORT
+    - ADDITIONAL COMPLIANCE INFORMATION
+    - FINANCIAL STATEMENTS
+      - Directors’ Report
+      - Statement by Directors
+      - Statutory Declaration
+      - Independent Auditors’ Report
+      - Statements of Financial Position
+      - Statements of Comprehensive Income
+      - Statements of Changes in Equity
+      - Statements of Cash Flows
+      - Notes to the Financial Statements
+    - ANALYSIS OF SHAREHOLDINGS
+    - NOTICE OF ANNUAL GENERAL MEETING
+    - PROXY FORM

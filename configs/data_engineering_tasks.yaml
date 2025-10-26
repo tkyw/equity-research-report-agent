@@ -1,0 +1,71 @@
+resource_query:
+  description: >
+    Fully understand {user_prompt} and break down the prompt into a list of tasks in order to answer user's questions.
+    The list of tasks will then be used by your colleague to find the resources from the resources pool.
+    Leverage your reasoning skills, critical thinking, and problem solving skills
+    Combine your questions with suggestions of the data_source that might contain the relevant information for the next agent to find the relevant information within the directory.
+    The directory includes:\n
+    {files}
+  expected_output: >
+    A list of tasks that can be used by the next agent to step by step find the more accurate information in order to answer the {user_prompt}.
+
+table_of_content_generation:
+  description: >
+    Make sure you fully understand the <context> (list of tasks) from the previous agent.
+    read through all documents in the knowledge pool to find the most relevant information. Generate a table of content for documents directory.
+    E.g. sample directory that contains all information you can used.
+    <sample>
+    Parent directory
+    - Capex/
+      - 2023-Capex.pdf
+      - 2024-Capex.pdf
+    - Opex/
+        - 2023-opex.pdf
+        - 2024-opex.pdf
+    - Revenue/
+        - 2023-revenue.pdf
+        - 2024-revenue.pdf
+    </sample>
+    - Make sure you undersrand the folder structure and make it as the table of content as in the <sample>
+
+    After that, based on the <context> from previous agent, target the most relevant documents and deep dive into studying those documents to find the most relevant information.
+    Then, extend the table of content for those documents that contain relevant information.
+
+    E.g. if relevant information is found in the Capex directory, extend the table of content for Capex directory and mark the parent as (relevant doc) The real directory might have different structure with the sample below, PLEASE ONLY USE BELOW SAMPLE AS A REFERENCE.
+    - Capex/
+      - 2023-Capex.pdf (relevant doc)
+        - Background
+        - Overview
+        - Summary
+          - Key Findings
+          - xxx
+        - Conclusion
+      - 2024-Capex.pdf (relevant doc)
+        - Background
+        - Overview
+        - Summary
+          - Key Findings
+          - xxx
+        - Conclusion
+    - Opex/
+        - 2023-opex.pdf
+        - 2024-opex.pdf
+    - Revenue/
+        - 2023-revenue.pdf
+        - 2024-revenue.pdf
+    </sample>
+  expected_output: >
+    Table of Content of the resources pool:
+      <TABLE of CONTENT GOES HERE>
+    <important>the structure of the table of content differ based on different types of resources pool.</important>
+
+resource_pulling:
+  description: >
+    Based on the <context> from the previous agents, only deep dive into the relevant documents to pull the most relevant information to answer the list of questions from the first agent.
+    You are only allowed to pull information from the knowledge pool, and generating dummy data that are not exists in the documents are strictly prohibited.
+    Make sure you deep dive into reading all relevant documents and extract the most relevant information to answer the questions.
+
+    <important>
+    Relevant documents means those documents that marked as (relevant doc).
+  expected_output: >
+    Detailed report of the relevant information that is extracted from the relevant documents to answer the user's questions.
