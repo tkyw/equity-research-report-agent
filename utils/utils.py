@@ -15,6 +15,7 @@ def print_directory_tree_treelib(path):
         if os.path.isdir(path):
             try:
                 for item in os.listdir(path):
+                    # print(item)
                     item_path = os.path.join(path, item)
                     add_to_tree(item_path, node_id)
             except PermissionError:
